@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 200px;
+    gap: 30px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+
+    width: 320px;
+    height: 480px;
+    border-radius: 16px;
+    padding: 24px;
+
+    &:hover {
+        transition: 0.25s ease;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.tittle-produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .qnt-produto {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .icon-estoque {
+        margin-top: 8px;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+.produto {
+
+    img {
+        border-radius: 30px;
+        padding: 10px 0px;
+    }
+
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+
+    a {
+        width: 100%;
+
+        padding: 15px;
+        border-radius: 10px;
+
+        text-decoration: none;
+        color: white;
+        background-color: black;
+
+        &:hover {
+            background-color: #121212dc;
+            transition: 0.25s ease;
+        }
+    }
+}
+
+.infprodut {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    h2 {
+        font-size: 16px;
+        font-weight: 550;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 550;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 200px;
+    gap: 30px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+
+    width: 320px;
+    height: 480px;
+    border-radius: 16px;
+    padding: 24px;
+
+    &:hover {
+        transition: 0.25s ease;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.tittle-produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .qnt-produto {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .icon-estoque {
+        margin-top: 8px;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+.produto {
+
+    img {
+        border-radius: 30px;
+        padding: 10px 0px;
+    }
+
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+
+    a {
+        width: 100%;
+
+        padding: 15px;
+        border-radius: 10px;
+
+        text-decoration: none;
+        color: white;
+        background-color: black;
+
+        &:hover {
+            background-color: #121212dc;
+            transition: 0.25s ease;
+        }
+    }
+}
+
+.infprodut {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    h2 {
+        font-size: 16px;
+        font-weight: 550;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 550;
+    }
+}
+
+/* ============================================ */
+/* RESPONSIVIDADE MOBILE */
+/* ============================================ */
+
+/* Tablets grandes e telas médias */
+@media (max-width: 1024px) {
+    .produtos {
+        padding: 40px 80px;
+        gap: 24px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .produtos {
+        padding: 30px 40px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .produto {
+        width: 300px;
+        height: 460px;
+    }
+}
+
+/* Smartphones grandes */
+@media (max-width: 480px) {
+    .produtos {
+        padding: 20px 16px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .produto {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        min-height: 440px;
+        padding: 20px;
+    }
+
+    .tittle-produto {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        h2 {
+            margin-top: 8px;
+            font-size: 15px;
+            width: 100%;
+        }
+
+        .qnt-produto {
+            margin-top: 4px;
+        }
+    }
+
+    .produto img {
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .infprodut {
+        padding: 16px 0px;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+
+    .botao {
+        padding: 8px 0px;
+        margin-top: auto;
+
+        a {
+            padding: 14px;
+            font-size: 15px;
+        }
+    }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 360px) {
+    .produtos {
+        padding: 16px 12px;
+        gap: 16px;
+    }
+
+    .produto {
+        padding: 16px;
+        min-height: 420px;
+    }
+
+    .tittle-produto h2 {
+        font-size: 14px;
+    }
+
+    .infprodut {
+        h2 {
+            font-size: 17px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+    }
+
+    .botao a {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

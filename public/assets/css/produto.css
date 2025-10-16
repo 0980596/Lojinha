@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.containerproduto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 50px;
+
+    .imagemproduto {
+
+        img {
+            height: 400px;
+            width: 400px;
+            border-radius: 10px;
+        }
+
+    }
+
+    .inf-produto {
+
+        .categmarca {
+            display: flex;
+            gap: 20px;
+
+            margin-bottom: 20px;
+
+            p {
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+
+        .precoedesc {
+
+            h2 {
+                font-size: 30px;
+                font-family: 500;
+            }
+
+            p {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 100%;
+                max-width: 600px;
+                
+                font-size: 18px;
+
+            }
+
+        }
+
+        .precoestoque {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .estoque {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+    }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.containerproduto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 50px;
+    padding: 20px;
+}
+
+.imagemproduto img {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.inf-produto {
+    max-width: 600px;
+}
+
+.categmarca {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.categmarca p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.precoedesc h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.precoedesc p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.precoestoque {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.precoestoque p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.estoque {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 1024px) {
+    .containerproduto {
+        height: auto;
+        gap: 40px;
+        padding: 40px 30px;
+    }
+
+    .imagemproduto img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .precoedesc h2 {
+        font-size: 26px;
+    }
+
+    .precoedesc p {
+        font-size: 16px;
+    }
+}
+
+/* Smartphones grandes e tablets pequenos */
+@media (max-width: 768px) {
+    .containerproduto {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .imagemproduto {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagemproduto img {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .inf-produto {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .categmarca {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .categmarca p {
+        font-size: 16px;
+    }
+
+    .precoedesc h2 {
+        font-size: 24px;
+    }
+
+    .precoedesc p {
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .precoestoque {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .precoestoque p {
+        font-size: 16px;
+    }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 480px) {
+    .containerproduto {
+        padding: 20px 15px;
+        gap: 25px;
+    }
+
+    .imagemproduto img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .categmarca {
+        gap: 12px;
+    }
+
+    .categmarca p {
+        font-size: 14px;
+    }
+
+    .precoedesc h2 {
+        font-size: 22px;
+    }
+
+    .precoedesc p {
+        font-size: 15px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .precoestoque {
+        gap: 12px;
+    }
+
+    .precoestoque p {
+        font-size: 15px;
+    }
+
+    .estoque {
+        gap: 8px;
+    }
+}
+
+/* Smartphones muito pequenos */
+@media (max-width: 360px) {
+    .containerproduto {
+        padding: 15px 10px;
+    }
+
+    .precoedesc h2 {
+        font-size: 20px;
+    }
+
+    .precoedesc p {
+        font-size: 14px;
+    }
+
+    .categmarca p,
+    .precoestoque p {
+        font-size: 14px;
+    }
+}
